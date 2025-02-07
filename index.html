@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LC WAİKİKİ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style type="text/css">
+/* MENU CONTAİNER CSS */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+/* MENU CONTAİNER CSS */
+
+
+/* LOGO CSS */ 
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #0056b3;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.mobilelogo {
+    display: none;
+}
+/* LOGO CSS */ 
+
+/* SEARCHBAR CSS */ 
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 5px;
+    background: white;
+}
+
+.searchbar i {
+    color: #888;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.searchinput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.searchbutton {
+    background: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.searchbutton:hover {
+    color: #0056b3;
+}
+/* SEARCHBAR CSS */
+
+/* RIGHTBAR CSS */
+.rightbar{
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0056b3;
+    text-align: center;
+    gap: 15px;
+    padding-left: 5px;
+}
+.rightbar div{
+    cursor: pointer;
+}
+
+/* RIGHTBAR CSS */
+
+/* TABLET CSS CHANGES */ 
+@media (max-width: 1060px) {
+    .searchbar {
+    width: 390px;
+    }
+    .desktoplogo {
+        display: none;
+    }
+    .mobilelogo {
+        display: inline;
+    }
+}
+/* TABLET CSS CHANGES */
+
+/* MOBILE CSS CHANGES */ 
+@media (max-width: 768px) {
+    .searchbar {
+    width: 300px;
+    }
+    .menu{
+    padding: 10px 10px;
+    }
+    .rightbar div p {
+        display: none;
+    }
+    .menu{
+    padding: 10px 5px;
+    }
+    .logo {
+    font-size: 18px;
+    }
+
+    .searchbar i {
+    font-size: 12px;
+    margin-right: 5px;
+    }
+
+    .searchinput {
+    font-size: 14px;
+    padding: 5px;
+    }
+
+    .searchbutton {
+    font-size: 12px;
+    padding: 2px 4px;
+    }
+}
+/* MOBILE CSS CHANGES */
+        
+    </style>
+</head>
+<body>
+    <!-- Header MENU. -->
+    <div class="menu">
+        <div class="logo">
+            <span class="desktoplogo">LC WAIKIKI</span>
+            <span class="mobilelogo">LCW</span>
+        </div>
+
+        <div class="searchbar">
+            <i class="fas fa-search"></i>
+            <input type="text" class="searchinput" placeholder="Ürün, kategori veya marka ara">
+            <button class="searchbutton">ARA</button>
+        </div>
+
+        <div class="rightbar">
+            <div class="login"><i class="fa-solid fa-right-to-bracket"></i><br><p class="logintext">Giriş Yap</p></div>
+            <div class="favorites"><i class="fa-regular fa-heart"></i><br><p class="favoritestext">Favorilerim</p></div>
+            <div class="basket"><i class="fa-solid fa-bag-shopping"></i><br><p class="baskettext">Sepetim</p></div>
+        </div>
+    </div>
+    <!-- Header MENU. -->
+
+    <div class="product-detail"></div>
+
+    <!-- JS Lib. And Files. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="firat_bisar.js"></script>
+    <!-- JS Lib. And Files. -->
+
+</body>
+</html>
